@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helan - The Lavish Beauty Salon | Home</title>
+  <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Custom CSS for Multi-item Carousel (This is still needed) -->
+  <style>
+    .multi-item-carousel {
+      overflow: hidden;
+    }
+    .multi-item-carousel .carousel-inner {
+      display: flex;
+      transition: none; 
+    }
+    .multi-item-carousel .carousel-item {
+      margin-right: 0;
+      flex: 0 0 100%;
+      display: block;
+      padding: 0 8px;
+    }
+  
+    @media (min-width: 768px) {
+      .multi-item-carousel .carousel-item {
+        flex: 0 0 33.3333%; 
+      }
+    }
+    /* On desktops and larger */
+    @media (min-width: 992px) {
+      .multi-item-carousel .carousel-item {
+        flex: 0 0 25%; /* Show 4 items */
+      }
+    }
+  </style>
+</head>
+<body id="home-page">
+
+<!-- Header and other sections... -->
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="logo-text">Helan</span><br>
+        <span class="logo-subtitle">The Lavish Beauty</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link book-now-btn" href="contact.html">Book Now</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  
+
+<section class="hero-section">
+  <div class="hero-slide current">
+      <div class="hero-content animate__animated animate__fadeIn">
+        
+        <!-- UPDATED H1 BELOW -->
+        <h1>Helan <span class="hero-subtitle-text">The Lavish Beauty</span></h1>
+        
+        <p>WHERE BEAUTY MEETS LUXURY</p>
+        <a href="services.html" class="btn btn-primary">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="welcome-section section-padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- MODIFICATION START: Changed column sizes to make image smaller -->
+      <div class="col-lg-8">
+        <div class="welcome-content">
+          <h2>Experience Beauty Like Never Before</h2>
+          <div class="section-divider"></div>
+          <p>Welcome to Helan - The Lavish Beauty...</p>
+          <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <img src="../images/cosmetic1.jpg" alt="Helan Interior" class="img-fluid">
+      </div>
+      <!-- MODIFICATION END -->
+    </div>
+  </div>
+</section>
+<section class="services-preview section-padding bg-light-purple">
+  <div class="container text-center">
+    <h2>Our Premium Services</h2>
+    <p>Indulge in our wide range of beauty treatments...</p>
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-cut"></i>
+        <h3>Hair Styling</h3>
+        <p>Classic cuts to trendy styles with precision.</p>
+        <a href="services.html#hair" class="btn-link">Learn More</a>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Nail Arts</h3>
+        <p>Stylish and trendy nail care</p>
+        <a href="services.html#spa" class="btn-link">Learn More</a>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-magic"></i>
+        <h3>Makeup</h3>
+        <p>Enhance your natural beauty for any occasion.</p>
+        <a href="services.html#makeup" class="btn-link">Learn More</a>
+      </div>
+    </div>
+    <a href="services.html" class="btn btn-primary mt-4">View All Services</a>
+  </div>
+</section>
+
+
+<!-- Featured Work Gallery -->
+<section class="featured-work section-padding">
+  <div class="container-fluid text-center">
+    <h2>Our Featured Work</h2>
+    <p>Glimpse of our beauty transformations</p>
+    
+    <!-- Custom Auto Scroll Container -->
+    <div class="auto-scroll-container" id="autoScrollGallery">
+        <div class="auto-scroll-track">
+            <!-- Original Images -->
+            <div class="auto-scroll-item">
+                <img src="../images/hair1.jpeg" alt="Featured Work 1">
+            </div>
+            <div class="auto-scroll-item">
+                <img src="../images/Makeup1.jpg" alt="Featured Work 2">
+            </div>
+            <div class="auto-scroll-item">
+                <img src="../images/nail1.jpg" alt="Featured Work 3">
+            </div>
+            <div class="auto-scroll-item">
+                <img src="../images/mehendi1.jpg" alt="Featured Work 4">
+            </div>
+            <div class="auto-scroll-item">
+                <img src="../images/hair2.webp" alt="Featured Work 5">
+            </div>
+            <div class="auto-scroll-item">
+                <img src="../images/nail2.jpg" alt="Featured Work 6">
+            </div>
+        </div>
+    </div>
+
+    <a href="gallery.html" class="btn btn-primary mt-4">View Full Gallery</a>
+  </div>
+</section>
+
+<!-- Other sections... -->
+<section class="testimonials-section section-padding bg-light-purple">
+  <div class="container text-center">
+    <h2>Client Testimonials</h2>
+    <p>What our clients say about us</p>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="../Galary_images/women-icon1.png" alt="Work 3" class="img-fluid" height="100" width="100">
+        <p>"Professionalism and attention to detail!"</p>
+        <strong>Priya Sharma</strong>
+      </div>
+      <div class="col-md-4">
+        <img src="../Galary_images/women-icon1.png" alt="Work 3" class="img-fluid" height="100" width="100">
+        <p>"Flawless wedding makeup. I felt beautiful!"</p>
+        <strong>Anjali Thapa</strong>
+      </div>
+      <div class="col-md-4">
+        <img src="../Galary_images/women-icon1.png" alt="Work 3" class="img-fluid" height="100" width="100">
+        <p>“The nail art experience left me completely refreshed and pampered!”</p>
+        <strong>Anusha Rai</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="opening-hours section-padding bg-light">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <div class="opening-hours-content">
+                  <div class="section-header">
+                      <h2>Get Exclusive Offers</h2>
+                      <div class="section-divider"></div>
+                  </div>
+                  
+                  <div class="social-icons mt-4">
+                      <p>Subscribe to our social media handle for offers & tips</p>
+                      <a href="https://www.facebook.com/profile.php?id=61571887811958" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.instagram.com/helan_thelavishbeauty/" class="instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.tiktok.com/@helan_thelavishbeauty?_t=ZS-8x8LFlgSQAW&_r=1" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                      <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+  </div>
+</section>
+
+
+<section class="cta-section section-padding">
+  <div class="container">
+    <div class="cta-inner text-center">
+    <h2>Ready to Experience Helan?</h2>
+    <p>Book your appointment today</p>
+    <a href="contact.html" class="btn btn-primary">Book Now</a>
+    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <p>© 2025 Helan - The Lavish Beauty. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Lightbox and Custom Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/lightbox.js"></script>
+
+</body>
+</html>
