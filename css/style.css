@@ -510,6 +510,20 @@ section {
     color: var(--gray-color);
 }
 
+.service-img {
+  max-width: 50%;
+  height: auto;
+}
+
+.service-img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.service-img {
+  border-radius: 50%;
+}
+
 /* Featured Work Gallery */
 .gallery-items {
     margin: 0 -10px;
@@ -747,6 +761,11 @@ section {
 .social-icons a:hover {
     opacity: 0.8;
 }
+
+/* .social-icons a:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+} */
 
 .footer-contact p {
     margin-bottom: 10px;
